@@ -8,35 +8,67 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Medical/Healthcare Theme Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 25% 26.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 26.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 26.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Medical Blue Primary */
+    --primary: 207 89% 42%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 207 89% 60%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft Medical Green */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 213 27% 84%;
+    --accent-foreground: 215 25% 26.9%;
 
+    /* Medical Emergency Red */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Success Green for Delivered Status */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
 
-    --radius: 0.5rem;
+    /* Warning Orange for Pending */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 98%;
+
+    /* Info Blue for In Transit */
+    --info: 200 98% 39%;
+    --info-foreground: 0 0% 98%;
+
+    --border: 213 27% 84%;
+    --input: 213 27% 84%;
+    --ring: 207 89% 42%;
+
+    --radius: 0.75rem;
+
+    /* Medical Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(142 76% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(207 89% 42%), hsl(142 76% 36%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(213 27% 96%));
+
+    /* Medical Shadows */
+    --shadow-medical: 0 4px 20px -2px hsl(207 89% 42% / 0.15);
+    --shadow-card: 0 2px 10px -1px hsl(215 25% 26.9% / 0.1);
+    --shadow-elevated: 0 8px 30px -4px hsl(207 89% 42% / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
